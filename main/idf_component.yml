@@ -1,0 +1,34 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=4.1.0"
+  iptool:
+    path: D:/esp_prj/global/iptool
+  ESP32Time:
+    path: D:/esp_prj/global/ESP32Time
+  master_i2c:
+    path: D:/esp_prj/global/master_i2c/master_i2c
+  dev_8574:
+    path: D:/esp_prj/global/master_i2c/dev_8574  
+  iot_out:
+    path: D:/esp_prj/global/master_i2c/iot_out 
+  iot_button:
+    path: D:/esp_prj/global/master_i2c/iot_button   
+  TimeTrigger:
+    path: D:/esp_prj/global/TimeTrigger      
+  bblanchon/arduinojson: "^6.21.3"  
+  telnet: 
+    path: D:/esp_prj/global/telnet   
+    
+  # # Put list of dependencies here
+  # # For components maintained by Espressif:
+  # component: "~1.0.0"
+  # # For 3rd party components:
+  # username/component: ">=1.0.0,<2.0.0"
+  # username2/component2:
+  #   version: "~1.0.0"
+  #   # For transient dependencies `public` flag can be set.
+  #   # `public` flag doesn't have an effect dependencies of the `main` component.
+  #   # All dependencies of `main` are public by default.
+  #   public: true

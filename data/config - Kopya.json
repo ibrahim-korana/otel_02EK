@@ -1,0 +1,214 @@
+{
+    "devices":"Room_ExBox",
+    "functions": [
+        {
+            "name":"room",
+            "uname":"room",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 5,
+            "global":0,
+            "hardware": {
+                "port": [
+                    {"pin": 2, "pcf":1, "name":"equ", "type":"PORT_INPORT"},
+                    {"pin": 12, "pcf":1, "name":"oda role", "type":"PORT_OUTPORT"}
+                ]
+            }
+        },
+        {
+            "name":"lamp",
+            "uname":"door Lamp 220",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 0,
+            "global":7,
+            "hardware": {
+                "port": [
+                    {"pin": 3, "pcf":1, "name":"anahtar", "type":"PORT_INPULS"},
+                    {"pin": 1, "pcf":1, "name":"role", "type":"PORT_OUTPORT"},
+                    {"pin": 1, "pcf":0, "name":"AN2", "type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"lamp",
+            "uname":"door Lamp 2",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 0,
+            "global":4,
+            "hardware": {
+                "port": [
+                    {"pin": 5, "pcf":1, "name":"anahtar", "type":"PORT_INPULS"},
+                    {"pin": 2, "pcf":1, "name":"role", "type":"PORT_OUTPORT"},
+                    {"pin": 1, "pcf":0, "name":"AN1", "type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"lamp",
+            "uname":"door Lamp 3",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 0,
+            "global":4,
+            "hardware": {
+                "port": [
+                    {"pin": 4, "pcf":1, "name":"anahtar", "type":"PORT_INPULS"},
+                    {"pin": 3, "pcf":1, "name":"role", "type":"PORT_OUTPORT"},
+                    {"pin": 1, "pcf":0, "name":"AN4", "type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"bell",
+            "uname":"ZIL",
+            "icon": 0,
+            "loc": 0,
+            "timer": 1,
+            "global": 1,
+            "hardware": {
+                "location" : "local",
+                "port": [
+                    {"pin": 11, "pcf":1, "name":"role","type":"PORT_OUTPORT"},
+                    {"pin": 6, "pcf":1, "name":"ZIL","type":"PORT_INPORT"}
+                ]
+            }
+        },       
+        {
+            "name":"klima",
+            "uname":"Klima 1",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 10,
+            "global":0,
+            "hardware": {
+                "port": [
+                    {"pin": 8, "pcf":1, "name":"Pencere", "type":"PORT_INPORT"}, 
+                    {"pin": 4, "pcf":1, "name":"KLM role", "type":"PORT_OUTPORT"}
+                    // {"pin": 0, "pcf":0, "name":"SN01", "type":"PORT_SENSOR"} 
+                ]
+            }
+        },
+        {
+            "name":"dnd",
+            "uname":"dnd",
+            "icon": 0,
+            "loc": 1,
+            "hardware": {
+                "location" : "local",
+                "port": [
+                    {"pin": 0, "pcf":0, "name":"SN_DND","type":"PORT_VIRTUAL"},
+                    {"pin": 0, "pcf":0, "name":"SN_CLN","type":"PORT_VIRTUAL"},
+                    {"pin": 0, "pcf":0, "name":"SN_MIN","type":"PORT_VIRTUAL"},
+                    {"pin": 0, "pcf":0, "name":"SN_TEK","type":"PORT_VIRTUAL"},
+                    {"pin": 0, "pcf":0, "name":"SN_COK","type":"PORT_VIRTUAL"},
+                    {"pin": 7, "pcf":1, "name":"AN_DND","type":"PORT_INPORT"},
+                    {"pin": 1, "pcf":1, "name":"AN_CLN","type":"PORT_INPORT"},
+                    {"pin": 5, "pcf":1, "name":"DND","type":"PORT_OUTPORT"},
+                    {"pin": 6, "pcf":1, "name":"CLN","type":"PORT_OUTPORT"}
+                ]
+            }
+        },
+        {
+            "name":"clnok",
+            "uname":"Clean OK",
+            "icon": 0,
+            "loc": 1,
+            "hardware": {
+                "location" : "local",
+                "port": [
+                    {"pin": 0, "pcf":0, "name":"AN008","type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"checkin",
+            "uname":"CheckIn",
+            "icon": 0,
+            "loc": 1,
+            "hardware": {
+                "location" : "local",
+                "port": [
+                    {"pin": 0, "pcf":0, "name":"SN01", "type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"message",
+            "uname":"Mesajlar",
+            "icon": 0,
+            "loc": 1,
+            "hardware": {
+                "location" : "local",
+                "port": []
+            }
+        },
+        {
+            "name":"emergency",
+            "uname":"emergency",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 0,
+            "global": 0,
+            "hardware": {
+                "port": [
+                    {"pin": 11, "pcf":1, "name":"Emg input", "type":"PORT_INPORT"},
+                    {"pin": 0, "pcf":0, "name":"ANEMG", "type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"ralarm",
+            "uname":"oda ALARM",
+            "icon": 0,
+            "loc": 0,     
+            "timer": 0,
+            "global": 0,
+            "hardware": {
+                "port": []
+            }
+        },
+        {
+            "name":"fire",
+            "uname":"YANGIN",
+            "id": 9,
+            "loc": 0,
+            "timer": 20,
+            "global": 0,
+            "hardware": {
+                "location" : "local",
+                "port": [
+                    {"pin": 12, "pcf":1, "name":"Duman","type":"PORT_INPORT"}
+                ]
+            }
+        },
+        {
+            "name":"lampon",
+            "uname":"Lamp Control",
+            "id": 5,
+            "loc": 1,
+            "timer": 2,
+            "hardware": {
+                "location" : "local",
+                "port": [
+                    {"pin": 10, "pcf":1, "name":"FULL_ON","type":"PORT_INPORT"},
+                    {"pin": 1, "pcf":0, "name":"AN3","type":"PORT_VIRTUAL"}
+                ]
+            }
+        },
+        {
+            "name":"dayclean",
+            "uname":"Gunluk Temizlik",
+            "id": 5,
+            "loc": 1,
+            "timer": 0,
+            "hardware": {
+                "location" : "local",
+                "port": []
+            }
+        }
+
+      
+    ]
+}
